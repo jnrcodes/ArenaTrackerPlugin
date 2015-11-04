@@ -1,0 +1,7 @@
+﻿## Interface: 60200
+## Title: ArenaTracker
+## Version: 0.1
+## Notes: Arena match tracking
+## Author: Jody Reed
+## SavedVariables: arenaTrackerDebug, arenaTrackerFight
+ArenaTracker.lua

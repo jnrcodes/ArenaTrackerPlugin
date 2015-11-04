@@ -1,0 +1,58 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Frame name="ArenaTracker_Main_UI" parent="UIParent" toplevel="true" enableMouse="true" movable="true" hidden="false">	
+		 <Size x="300" y="200"/>
+		 <TitleRegion>
+		  <Size x="300" y="20"/>
+		  <Anchors><Anchor point="TOP"/></Anchors>
+		 </TitleRegion>
+		 <!-- Tags below add a visual element to the frame. -->
+		 
+		 <Anchors><Anchor point="CENTER" relativeTo="UIParent"/></Anchors>		
+		<Backdrop bgFile="Interface\TutorialFrame\TutorialFrameBackground"
+			   edgeFile="Interface\DialogFrame\UI-DialogBox-Border" tile="true">
+			<EdgeSize val="16"/>
+			<TileSize val="32"/>
+			<BackgroundInsets left="5" right="5" top="20" bottom="5"/>
+		</Backdrop>
+
+
+<EditBox name="$parent_EditBox" letters="80">
+    <Size x="100" y="32" />
+    <Anchors>
+        <Anchor point="LEFT">
+            <Offset x="50" y="0" />
+        </Anchor>
+    </Anchors>
+    <Layers>
+        <Layer level="BACKGROUND">
+            <Texture file="Interface\ChatFrame\UI-ChatInputBorder-Left">
+                <Size x="75" y="32" />
+                <Anchors>
+                    <Anchor point="LEFT">
+                        <Offset x="-10" y="0" />
+                    </Anchor>
+                </Anchors>
+                <TexCoords left="0" right="0.2" top="0" bottom="1.0"/>
+            </Texture>
+            <Texture file="Interface\ChatFrame\UI-ChatInputBorder-Right">
+                <Size x="75" y="32" />
+                <Anchors>
+                    <Anchor point="RIGHT">
+                        <Offset x="10" y="0" />
+                    </Anchor>
+                </Anchors>
+                <TexCoords left="0.7" right="1.0" top="0" bottom="1.0"/>
+            </Texture>
+        </Layer>
+    </Layers>
+    <Scripts>
+        <OnLoad>
+        </OnLoad>
+    </Scripts>
+    <FontString inherits="ChatFontNormal" />
+</EditBox>
+		 
+		
+		
+	</Frame>
+</Ui>
